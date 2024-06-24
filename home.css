@@ -45,7 +45,7 @@ img {
 .header-name {
     font-family: "Inter", sans-serif;
     font-size: 30px;
-    color: white; 
+    color: rgb(0, 0, 0); 
     margin-left: 90px;
     text-shadow: 
         -1px -1px 0 #000,  
@@ -223,7 +223,7 @@ img {
   }
   
   .nav-link {
-    color: #fff;
+    color: #000000;
   }
   
   .nav-link:hover {
