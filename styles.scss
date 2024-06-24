@@ -1,0 +1,50 @@
+// mport Bootstrap with custom configurationsI
+@import "../../../node_modules/bootstrap/scss/functions"; // Import Bootstrap functions
+@import "../../../node_modules/bootstrap/scss/variables"; // Import Bootstrap variables
+@import "../../../node_modules/bootstrap/scss/mixins"; // Import Bootstrap mixins
+@import "../../../node_modules/bootstrap/scss/nav"; // Import Bootstrap nav component
+
+// Define variables
+$prefix: "myapp";
+
+// Custom variables
+$nav-link-color: #333; // Default color
+$nav-link-hover-color: #fff; // Hover color
+
+
+
+// Generate CSS custom properties using variables
+:root {
+  --#{$prefix}nav-link-color: #{$nav-link-color};
+  --#{$prefix}nav-link-hover-color: #{$nav-link-hover-color};
+}
+
+// Example usage of CSS custom properties
+.nav-link {
+  color: var(--#{$prefix}nav-link-color);
+}
+
+.nav-link:hover {
+  color: var(--#{$prefix}nav-link-hover-color);
+  text-decoration-color: var(--#{$prefix}nav-link-hover-underline-color);
+}
+
+
+@media (max-width: 768px) {
+  .header-name {
+    font-size: 24px; 
+  .introduction-1, .introduction-2 {
+    font-size: 24px; 
+    margin-top: -100px; 
+  }
+
+  .icons-container {
+    margin-left: 0; 
+  }
+
+  .modal-title-custom {
+    margin-left: 0; 
+  }
+
+ 
+}
